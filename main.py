@@ -7,7 +7,7 @@ URL = "https://stackoverflow.com/questions/tagged"
 PAGE_LIMIT = 1
 
 def build_url(base_url=URL, topic='python', tab="newest", page=1, pagesize=15):
-    return f"{base_url}/{topic}?tab={tab}&page={page}&pagesize=15" #https://stackoverflow.com/questions/tagged/python?tab=newest&page=1&pagesize=15
+    return f"{base_url}/{topic}?tab={tab}&page={page}&pagesize={pagesize}" #https://stackoverflow.com/questions/tagged/python?tab=newest&page=1&pagesize=15
 
 def scrape_page(page=1):
     """
